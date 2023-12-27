@@ -20,6 +20,7 @@ var driverDialect = map[string]dialect{
 	"*sqlite3.SQLiteDriver":        sqliteDialect{},   // github.com/mattn/go-sqlite3
 	"*sqlite.impl":                 sqliteDialect{},   // github.com/gwenn/gosqlite
 	"sqlite3.Driver":               sqliteDialect{},   // github.com/mxk/go-sqlite
+	"*sqlite.Driver":		sqliteDialect{},   // modernc.org/sqlite
 	"*pq.Driver":                   postgresDialect{}, // github.com/lib/pq
 	"*stdlib.Driver":               postgresDialect{}, // github.com/jackc/pgx
 	"*pgsqldriver.postgresDriver":  postgresDialect{}, // github.com/jbarham/gopgsqldriver
